@@ -1,0 +1,8 @@
+<ListXML>
+   <object class="ru.sfedu.mailing.models.PostOffice">
+      <address>address</address>
+      <country>country</country>
+      <OfficeId>1</OfficeId>
+      <city>city</city>
+   </object>
+</ListXML>

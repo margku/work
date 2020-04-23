@@ -1,0 +1,6 @@
+<ListXML>
+   <object class="ru.sfedu.mailing.models.Client">
+      <name>Name</name>
+      <id>1</id>
+   </object>
+</ListXML>
