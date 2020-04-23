@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>athlete.png</file>
+        <file>city.png</file>
+        <file>country.png</file>
+        <file>delete.png</file>
+        <file>discipline.png</file>
+        <file>game.png</file>
+        <file>judges.png</file>
+        <file>main_icon_new.png</file>
+        <file>medal.png</file>
+        <file>object.png</file>
+        <file>olymp.png</file>
+        <file>part_country.png</file>
+        <file>symbol.png</file>
+        <file>table.png</file>
+        <file>connect.png</file>
+        <file>warning.png</file>
+    </qresource>
+</RCC>
