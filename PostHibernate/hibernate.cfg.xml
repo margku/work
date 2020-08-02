@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Настройки подключения к БД -->
+<!--         Включить автоматическое управление контекстом сессии -->
+        <property name="current_session_context_class">thread</property>
+<!--         Отключение кеша второго уровня -->
+<!--        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>-->
+<!--         Вывод в консоль SQL-запросов -->
+<!--        <property name="show_sql">true</property>-->
+
+<!--        <property name="format_sql">true</property>-->
+<!--        <property name="use_sql_comments">true</property>-->
+
+        <property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+        <property name="connection.url">jdbc:hsqldb:file:${file_db}/hsql.db</property>
+        <property name="connection.username">SA</property>
+        <property name="connection.password"></property>
+        <property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+<!---->
+                <!-- JDBC connection pool (use the built-in) -->
+<!--        <property name="connection.pool_size">10</property>-->
+<!---->
+<!--        java -classpath lib/hsqldb.jar org.hsqldb.server.Server &#45;&#45;database.0 jdbc:hsqldb:file:hsql/hsql.db &#45;&#45;dbname.0 hsql-->
+                <!-- SQL dialect -->
+<!---->
+<!---->
+                <!-- Enable Hibernate's automatic session context management -->
+<!--        <property name="current_session_context_class">thread</property>-->
+<!---->
+                <!-- Disable the second-level cache -->
+<!--        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>-->
+<!---->
+                <!-- Echo all executed SQL to stdout -->
+<!--        <property name="show_sql">true</property>-->
+<!---->
+<!---->
+<!--         Drop and re-create the database schema on startup-->
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <property name="javax.persistence.create-database-schemas">true</property>
+<!--        -->
+    </session-factory>
+</hibernate-configuration>

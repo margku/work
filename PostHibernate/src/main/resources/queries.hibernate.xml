@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <sql-query name="HSQLDB_CATALOG_LAB2">
+        select TABLE_NAME from INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='LAB2';
+    </sql-query>
+    <sql-query name="HSQLDB_CATALOG_LAB4">
+        select TABLE_NAME from INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='LAB4';
+    </sql-query>
+    <sql-query name="HSQLDB_CATALOG_LAB5">
+        select TABLE_NAME from INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='LAB5';
+    </sql-query>
+    <sql-query name="HSQLDB_CATALOG_MAPPED">
+        select TABLE_NAME from INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='MAPPED';
+    </sql-query>
+    <sql-query name="HSQLDB_CATALOG_TABLEPERCLASS">
+        select TABLE_NAME from INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='TPC';
+    </sql-query>
+    <sql-query name="HSQLDB_CATALOG_JOINED">
+        select TABLE_NAME from INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='JOINED';
+    </sql-query>
+    <sql-query name="HSQLDB_CATALOG_SINGLETABLE">
+        select TABLE_NAME from INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='SINGLETABLE';
+    </sql-query>
+</hibernate-mapping>
